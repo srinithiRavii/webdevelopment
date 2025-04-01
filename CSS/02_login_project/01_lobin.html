@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FORM</title>
+    </head>
+    <style>
+        body{
+            background-color:rgb(1, 66, 66);
+            margin:0;
+            padding:0;
+            height:100vh;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            background-color: aliceblue;
+            border-radius:8px;
+            padding:30px;
+            width:210px;
+        }
+        h2{
+            color:darkslateblue;
+            text-align:center;
+            margin-bottom:20px;
+        }
+        form{
+            display:flex;
+            flex-direction:column;
+            gap:10px;
+        }
+    
+        input{
+            border-radius: 10px;
+            padding:10px;
+            margin-bottom:1px;
+            border : 1px solid rgb(0,15.150);
+            background-color:antiquewhite;
+        }
+        button{
+            background-color:brown;
+            border-radius:5px;
+            border-bottom:5px;
+            padding:5px;
+        }
+        button:hover{
+            background-color:crimson;
+        }
+    </style>
+    <body>
+        <div class="card">
+            <h2>Login</h2>
+            <form>
+                <label>Email<input type="email"></label>
+                <label>Password<input type="password"></label>
+                <button type="submit">LOGIN</button>
+            </form>
+        </div>
+    </body>
+</html>

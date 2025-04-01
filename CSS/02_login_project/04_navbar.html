@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NAVBAR</title>
+        <style>
+            body{
+                font-family:Arial, Helvetica, sans-serif;
+                margin:0;
+                padding:10px;
+                background-color:rgb(62, 64, 64);
+                color:black;
+            }
+            .nav-container{
+                  margin-bottom:20px;
+            }
+            h2{
+                margin-bottom: 20px;
+                font-style: italic;
+                color: crimson;
+                text-decoration: underline;
+            }
+            .nav1{
+                background-color:darkkhaki;
+                border:20px;
+            }
+            .nav1 ul{
+                list-style-type: none;
+                display:flex;
+                justify-content: space-around; 
+                margin:0;
+                padding:0;
+            }
+            .nav1 li{
+                 display:inline;
+            }
+            .nav1 a{
+                color:black;
+                padding:10px;
+                position: relative;
+                text-decoration: none;
+                display:block;
+            }
+            .nav1 .login-btn{
+                color:azure;
+                background-color: blue;
+                padding:10px;
+               
+            }
+            .nav1 a::after{
+                content:"abc";
+                position:absolute;
+                height: 12px;
+                width:100%;
+                bottom:0;
+                left:0;
+                transform:scaleX(0);
+                transition: transform 0.3s ease-in-out;
+            }
+            .nav1 a:hover::after{
+                transform: scaleX(1);
+            }
+
+            .nav1 .login-btn:hover{
+                background-color: rgb(30, 133, 30);
+            }
+            .nav2{
+                background-color: darkcyan;
+                border:20px;
+                width:200px;
+                height:180px;
+            }
+            .nav2 ul{
+                list-style-type: none;
+                padding:0;
+                margin:0;
+            }
+            .nav2 li{
+                margin:12px;
+           
+            }
+            .nav2 a{
+                text-decoration: none;
+                color:rgb(252, 255, 255);
+                display:block;
+                width:200px;
+                padding:5px;
+
+            }
+            .nav2 .login-btn{
+                background-color: rgb(30, 178, 72);
+                color:azure;
+                width:150px;
+                padding:5px;
+            }
+            .nav2 .login-btn:hover{
+                background-color: green;
+
+            }
+            .nav3{
+                background-color:rgb(106, 125, 176);
+                padding:10px;
+            }
+            .nav3 ul{
+                list-style: none;
+                padding:0;
+                margin:0;
+                display:flex;
+                justify-content: space-around;
+                align-items: baseline;
+            }
+            .nav3 a{
+                text-decoration: none;
+                color:cornsilk;
+                display:block;
+
+            }
+            .nav3 .dropdown-content{
+                display:none;
+            }
+            .nav3 .dropdown:hover .dropdown-content{
+                display:block;
+                position:absolute;
+                padding:5px;
+               min-width: 100px;
+               background-color:#aa7c09 ;
+               color: azure;
+            }
+            .nav3 .login-btn{
+                background-color: rgb(107, 204, 11);
+                color:azure;
+            }
+            .nav3 .login-btn:hover{
+                background-color: hsl(84, 80%, 12%);
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="nav-container">
+            <h2>Horizontal With Underline Effect</h2>
+            <nav class="nav1">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><button type="submit" class="login-btn">Login</button></li>
+                </ul>
+
+            </nav>
+        </div>
+        <div class="nav-container">
+            <h2>Vertical With Hover Effect</h2>
+            <nav class="nav2">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><button type="submit" class="login-btn">Login</button></li>
+                </ul>
+                
+            </nav>
+        </div>
+        <div class="nav-container">
+            <h2>Horizontal With Dropdown</h2>
+            <nav class="nav3">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li class="dropdown"><a href="#">About</a>
+                    <div class="dropdown-content">
+                        <a href="#">our story</a>
+                        <a href="#">contact</a>
+                        <a href="#">team</a>
+
+                    </div></li>
+                    <li><a href="#">Product</a></li>
+                    <li><button type="submit" class="login-btn">Login</button></li>
+                </ul>
+                
+            </nav>
+        </div>
+    </body>
+</html>

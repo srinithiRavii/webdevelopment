@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            SELECTORS
+        </title>
+        <style>
+            /*1-Universal selector*/
+            *{
+                margin:0;
+                padding:0;
+            }
+            /*2-Type selector*/
+            p{
+                font-size:16px;
+                margin-bottom:10px;
+            }
+            /*3-Class selector*/
+            .a{
+                color:rgb(75, 190, 30)
+                
+            }
+            /*4-Id selector*/
+            #header{
+                 background-color: blue;
+              }
+            /*5-Attribute selector*/
+            input[type="text"]{
+                background-color: black;
+                color: azure;
+                font-style: italic;
+            }
+            /*6-Descendant selector*/
+            article p{
+                 background-color: brown;
+                 color:azure
+             }
+             /*7-Child selector*/
+             div>p{
+                background-color: aqua;
+                color: chocolate;
+             }
+             /*8-Adjacent sibling selector*/
+             h1+p{
+                font-weight: bold;
+             }
+             /*9-General sibling selector*/
+             h2~p{
+                background-color: cadetblue;
+             }
+             /*10-pseudo class selector*/
+             a:hover{
+                color:red;
+                padding:10px;
+
+             }
+             /*11-pseudo element selector*/
+             p::first-letter{
+                font-weight: bold;
+                font-size: 20px;
+             }
+             /*12-Grouping selector*/
+             h1,h2,h3{
+                background-color: rgb(185, 22, 22);
+             }
+
+        </style>
+    </head>
+    <body>
+        <header id="header">This is the header</header>
+        <h1>Main Heading</h1>
+        <p>This paragraph is adjacent to h1 and demonstrate adjacent sibling selector.</p>
+        <p>This is regular selector showing type selector.</p>
+        <input type="text" placeholder="enter text here">
+        <article>
+            <p>This paragraph is inside an article,showing desendant selector.</p>
+            
+        </article>
+        <div>
+    
+        <p>direct child</p>
+        <p>direct child</p>
+        <section>
+           <p> desendant</p>
+        
+    </section>
+    </div>
+        <h2>Sub Heading</h2>
+        <p>This is sibling paragraph to h2 and general sibling also</p>
+        <div class="a">
+            this is sibling div to 
+        </div>
+        <p>pseudo element selector</p>
+        <a href="#">Hover over me to see pseudo selector in action</a>
+        <h3>Heading</h3>
+        <p>The headings h1,h2,h3 use grouping selector</p>
+    </body>
+</html>

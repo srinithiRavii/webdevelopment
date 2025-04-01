@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BOX MODEL</title>
+        <style>
+            body{
+                font-family:Arial, Helvetica, sans-serif;
+                line-height: 1.6;
+                padding: 20px;
+            }
+            
+            .content-box{
+                width:300px;
+                height:300px;
+                padding:20px;
+                border:5px solid #333;
+                margin:30px;
+                background-color: #f0f0f0;
+                box-sizing: content-box;
+                background-color: cornsilk;
+            }
+            .border-box{
+                width:300px;
+                height:200px;
+                padding:20px;
+                border:5px solid #333;
+                margin:30px;
+                box-sizing: content-box;
+                background-color: aquamarine;
+            }
+            .inline{
+                padding:10px;
+                margin:20px;
+                background-color: rgb(226, 231, 231);
+                /*inline element ignore width and height*/
+                width:200px;
+                height:100px;
+
+            }
+            .block{
+                padding:10px;
+                margin:20px;
+                background-color:rgb(159, 169, 179);
+                width:200px;
+                height:100px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS BOX MODEL</h1>
+         <h3>Content-box(default)</h3>
+         <div class="content-box">
+        
+          <p>This is a content Box element</p>
+          <p>Width:300px+40px(padding)</p>
+          <p>+10px(border)=350px</p>
+          <p>Height:300px+40px(padding)</p>
+          <p>+10px(border)=350px</p>
+        </div>
+        <h3>Border-box</h3>
+        <div class="border-box">
+        
+        <p>This is a border Box element</p>
+        <p>Width:300px(including padding and border)</p>
+        <p>Height:200px(including padding and border)</p>
+        </div>
+        <h2>Inline</h2>
+        <p>
+            this is paragraph with<span class="inline">inline element.</span>it takes only necessary width
+        </p>
+        <h2>Block-level</h2>
+        <div class="block">
+            this is block level element.it takes full width available.
+        </div>
+    
+    </body>
+</html>
