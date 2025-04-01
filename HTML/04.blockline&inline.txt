@@ -1,0 +1,17 @@
+BLOCKLINE:
+  -->It takes full width available from left to right.
+  -->It start from new line.it automatically some space before and after element.
+  -->some tags in it:
+       -heading tag h1 to h6.
+       -ol,ul.
+       -li.
+       -p.
+INLINE:
+   -->An inline element does not start on a new line.
+   -->An inline element only takes up as much width as necessary.
+   -->some tags:
+        -a.
+        -img.
+        -strong.
+        -em.
+        -span.

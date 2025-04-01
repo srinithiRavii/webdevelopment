@@ -1,0 +1,16 @@
+FRONTEND:
+   1.HTML
+   2.CSS
+   3.JAVASCRIPT
+BACKEND:
+   1.Programming languages:
+     1.JAVASCRIPT
+     2.JAVA
+     3.PHP
+     4.Node JS
+     5.Django
+   2.Databases:
+      1.mongo Db
+      2.SQL
+      3.MySQL
+API:Gateway to make interaction between frontend and backend.

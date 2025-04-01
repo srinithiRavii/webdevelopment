@@ -1,0 +1,6 @@
+HTML(Hypertext MarkUp Language):
+    -->It is defined as the structure of the web page.
+    --> Almost Every tag is act as container.
+    -->It is diveded as two parts:
+         --><head>-contains metadata.
+         --><body>-contains code for structure of web page.
